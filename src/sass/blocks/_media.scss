@@ -1,3 +1,12 @@
+@media (max-width: 1199px) {
+    .footer {
+        &__info {
+            width: 360px;
+            height: 270px;
+        }
+    }
+}
+
 @media (max-width: 991px) {
     .promo {
         padding: 25px 40px 25px 40px;
@@ -27,21 +36,48 @@
             }
         }
     }
+    .carousel {
+        &__inner {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
     .feed-form {
         padding-left: 20px;
     }
+    .footer {
+        &__info {
+            top: 0;
+            left: 40%;
+            transform: none;
+            width: 460px;
+            height: 210px;
+            padding: 50px 68px 60px 68px;
+        }
+        &__adr {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        &__social-item {
+            margin-top: 15px;
+        }
+    }
 }
+
 @media (max-width: 767px) {
     .promo {
         &__wrapper {
             align-items: center;
         }
-        }
         .header {
         &__official {
             display: none;
         }
-        }
+    }
+    }
     .benefits {
         padding: 35px 25px 35px 25px;
         &__title {
@@ -57,7 +93,33 @@
             font-size: 14px;
         }
     }
+
+    .carousel {
+        &__inner {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
     }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+        }
+    }
+    .footer {
+        &__info {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 270px;
+            height: 205px;
+            background: $main-color;
+            padding: 10px;
+        }
+    }
+}
 @media (max-width: 575px) {
     .promo {
         width: 100%; 
@@ -98,6 +160,9 @@
             width: 153px;
             height: 32px;
         }
+        &_mini {
+            padding-top: 7px;
+        }
     }
     .benefits {
         width: 100%; 
@@ -112,6 +177,53 @@
         }
         &__subheader {
             margin-top: 10px;
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 99%;
+            height: 99%;
+            object-fit: cover;
+        }
+    }
+    .review {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__subtitle {
+            margin-top: 50px;
+            text-align: center;
+        }
+        &__rank {
+            text-align: center;
+        }
+        &__descr {
+            text-align: center;
+        }
+    }
+    .modal {
+        width: 342px;
+    }
+    .footer {
+        &__info {
+            position: absolute;
+            top: 460px;
+            left: 50%;
+            width: 270px;
+            height: 170px;
+            transform: translateX(-50%);
+            background: $main-color;
+            padding: 10px;
+        }
+        &__adr {
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+        &__phone {
+            font-size: 16px;
         }
     }
 }

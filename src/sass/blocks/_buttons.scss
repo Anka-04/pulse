@@ -8,6 +8,9 @@
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
+    &:hover {
+        background-color: #b20101;
+    }
     &__main {
         margin-top: 67px;
         width: 303px;
@@ -19,5 +22,12 @@
         height: 55px;
         color: #ffffff;
         font-size: 16px;    
+    }
+    &_mini {
+        width: 135px;
+        height: 44px;
+        font-size: 14px;
+        text-align: center;
+        padding-top: 11px;
     }
 }

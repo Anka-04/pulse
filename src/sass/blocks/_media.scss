@@ -129,6 +129,10 @@
         }
         &__icons {
             justify-content: center;
+            width: auto;
+        }
+        &__icon {
+            width: 100px;
         }
     }
     .header {
@@ -140,7 +144,7 @@
             }
         }
         &__phone {
-            font-size: 16px;
+            font-size: 15px;
         }
         &__subheader {
             font-size: 16px;
